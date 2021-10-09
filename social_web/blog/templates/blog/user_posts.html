@@ -1,6 +1,6 @@
 {% extends "blog/base.html" %}
 {% block content %}
-<a class="btn btn-outline-success mb-3" type="submit" href="{% url 'post-create' %}">Create Post</a>
+    <h2><a class="article-title mb-3">Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</a></h2>
     {% for post in posts %}
         <article class="media content-section">
           <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
