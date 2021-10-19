@@ -9,3 +9,11 @@ Project is created with:
 * Python version: 3.9
 * Django version: 3.2.6
 * Bootstrap version: 4.3.1
+
+## Setup
+To run this project, install it locally using:
+1. git clone https://github.com/Hyper-glitch/Django_blog.git
+2. create virtual environments: python3 -m venv venv
+3. install all libraries: pip install requirements.txt
+4. python manage.py migrate
+5. python manage.py runserver
