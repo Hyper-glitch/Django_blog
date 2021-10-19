@@ -17,3 +17,5 @@ To run this project, install it locally using:
 3. install all libraries: pip install requirements.txt
 4. python manage.py migrate
 5. python manage.py runserver
+
+![Algorithm schema](./images/example.png)
