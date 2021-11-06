@@ -20,6 +20,6 @@ To run this project, install it locally using:
 
 ![Algorithm schema](example.png)
 
-## Here is application on a server
+## Here is the application on the Linux server
 You can test my application on a Linux remote server
 http://194.195.245.103/
