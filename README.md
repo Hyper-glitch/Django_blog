@@ -19,3 +19,7 @@ To run this project, install it locally using:
 5. python manage.py runserver
 
 ![Algorithm schema](example.png)
+
+## Here is application on a server
+You can test my application on a Linux remote server
+http://194.195.245.103/
