@@ -12,11 +12,8 @@ Project is created with:
 
 ## Setup
 To run this project, install it locally using:
-1. git clone https://github.com/Hyper-glitch/Django_blog.git
-2. create virtual environments: python3 -m venv venv
-3. install all libraries: pip install requirements.txt
-4. python manage.py migrate
-5. python manage.py runserver
+1. docker pull hyperglitch/django_blog:latest
+2. docker run -dp 8000:8000 hyperglitch/django_blog
 
 ![Algorithm schema](example.png)
 
