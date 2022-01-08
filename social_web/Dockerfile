@@ -5,5 +5,6 @@ WORKDIR /django_blog
 COPY requirements.txt /django_blog/
 RUN pip install -r requirements.txt
 COPY . /django_blog/
+VOLUME ["/django_blog/volume"]
 ENTRYPOINT ["python", "manage.py", "migrate"]
 ENTRYPOINT ["python", "manage.py", "runserver", "0.0.0.0:8000"]
