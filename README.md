@@ -9,6 +9,7 @@ Project is created with:
 * Python version: 3.9
 * Django version: 3.2.6
 * Bootstrap version: 4.3.1
+* Docker version: 20.10.12
 
 ## Setup
 To run this project, install it locally using:
@@ -19,4 +20,4 @@ To run this project, install it locally using:
 
 ## Here is the application on the Linux server
 You can test my application on a Linux remote server
-http://194.195.245.103/
+http://139.162.137.249:8000
