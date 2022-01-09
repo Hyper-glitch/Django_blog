@@ -19,5 +19,5 @@ To run this project, install it locally using:
 ![Algorithm schema](example.png)
 
 ## Here is the application on the Linux server
-You can test my application in docker container on a Linux server
+You can test my application in a docker container on a Linux server
 http://139.162.137.249:8000
