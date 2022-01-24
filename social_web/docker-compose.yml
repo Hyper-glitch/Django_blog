@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:13-alpine
+    container_name: postgres_blog
+    restart: always
+    networks:
+      - blog_network
+    volumes:
+      - postgres_blog_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+  blog:
+    build: .
+    container_name: django_blog
+    restart: always
+    ports:
+      - 8000:8000
+    networks:
+      - blog_network
+    volumes:
+      - django_blog_data:/django_blog/volume/data
+    env_file:
+      - .env
+    command: >
+      sh -c "python manage.py runserver 0.0.0.0:8000"
+    depends_on:
+      - db
+
+networks:
+  blog_network:
+    driver: bridge
+
+volumes:
+  django_blog_data: {}
+  postgres_blog_data: {}
