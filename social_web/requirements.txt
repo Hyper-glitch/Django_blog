@@ -11,6 +11,7 @@ pexpect==4.8.0
 pickleshare==0.7.5
 Pillow==8.3.2
 prompt-toolkit==3.0.20
+psycopg2==2.8.4
 ptyprocess==0.7.0
 Pygments==2.10.0
 pytz==2021.1
